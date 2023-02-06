@@ -1,17 +1,12 @@
-import { QueryClient, QueryClientProvider } from "react-query";
-import Userlist from "./Components/Userlist";
 import "./App.css";
+import Counter from "./features/counter/Counter";
 
-const queryClient = new QueryClient();
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <div className="App">
-        <header className="App-header">
-          <Userlist />
-        </header>
-      </div>
-    </QueryClientProvider>
+    <div className="App">
+      <h1>Hello</h1>
+      <Counter/>
+    </div>
   );
 }
 
